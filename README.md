@@ -40,7 +40,30 @@ Write your code in the eXton-Code-Editor and save it as a .json-file. All your d
     + "r" right aligned text
 
 + ## Object tags
-    +   {
+    +   `{
             type:"fontSize",
             value:"21pt"
-        } for fontsize with 21 pt high characters
+        }` for fontsize with 21 pt high characters
+
+    +   `{
+            type:"nrlist",
+            value:"X.Y.Z..."
+        }` for numbered list 
+    
+    +   `{
+            type:"list",
+            value:"...." // each point -> one tab
+        }` for normal tab-list
+    
+    +   `{
+            type:"image"
+            value:"imagecontent-base64",
+            x: Int,
+            y: Int,
+            //etc
+        }` for images with certain coordinates on the document
+
+    +   `{
+            type:"lp",
+            value: Int in pt
+        }` // line distance in pt
